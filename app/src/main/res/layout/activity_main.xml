@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluebackground"
+    app:barrierMargin="@dimen/cardview_default_elevation"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/frame2" />
+
+    <ImageView
+        android:id="@+id/imageview_profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_width="370dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginTop="79dp"
+        android:src="@drawable/my_pic" />
+
+    <TextView
+        android:id="@+id/tanu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Tanushree"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tanu"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="Hi ! I am Tanushree and hails from Jamshedpur, Jharkhand. I'm currently pursuing B.Tech(IT) from IIIT Allahabad. I love outdoor sports, specifically athletics. Involved in exploring all fields these days."
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/github"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/github_icon" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/intro"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/gmail_icon" />
+
+    <TextView
+        android:id="@+id/college-id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro"
+        android:layout_toEndOf="@id/mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+
+        android:text="iit2020054@iiita.ac.in"
+        android:textColor="@color/purple_700"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/college-id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/mail"
+        android:text="tanushree950444@gmail.com"
+        android:textColor="@color/purple_700"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/fb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/mail"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="63dp"
+        android:layout_toEndOf="@+id/github"
+        android:src="@drawable/facebook_icon" />
+
+    <ImageView
+        android:id="@+id/insta"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/mail"
+        android:layout_toEndOf="@+id/fb"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="63dp"
+        android:src="@drawable/instagram_icon" />
+
+    <ImageView
+        android:id="@+id/linkedin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/mail"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="63dp"
+        android:layout_toEndOf="@+id/insta"
+        android:src="@drawable/linkedin_icon" />
+
+
+</RelativeLayout>
